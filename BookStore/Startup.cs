@@ -21,6 +21,8 @@ namespace BookStore
             //services.AddControllers(); for all
             //services.AddControllersWithViews(); for web api (without view)
             services.AddControllersWithViews();
+            
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,6 +34,7 @@ namespace BookStore
             }
 
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {

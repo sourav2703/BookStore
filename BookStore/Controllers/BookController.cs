@@ -24,9 +24,9 @@ namespace BookStore.Controllers
         {
             return listt;
         }
-        public List<BookModel> GetBooksById(int id)
+        public BookModel GetBooksById(int id)
         {
-            return listt.Where(x => x.Id == id).ToList();
+            return listt.Where(x => x.Id == id).FirstOrDefault();
         }
         public List<BookModel> SearchBooks(string author,string title)
         {

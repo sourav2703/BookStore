@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Book Management Application</title>
+    <link href="~/css/Home.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap-utilities.css" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">Book Store</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home/aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home/contactus">Contact Us</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+</body>
+</html>
